@@ -1,7 +1,11 @@
 import com.faangx.ktp.patterns.single.PatternLinesBasedMiniApp
 
 fun printPattern(lines: Int) {
-    TODO()
+    repeat(lines) { i ->
+        repeat(i) { print(' ') }
+        for (j in lines downTo i+8) { print(j)}
+        println()
+    }
 }
 
 fun main() {
